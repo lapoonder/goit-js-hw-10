@@ -24,7 +24,7 @@ iziToast.settings({
 let userSelectedDate, intervalId, timerElement;
 const statusbtn = document.querySelector('button[data-start]'),
   inputField = document.querySelector('#datetime-picker'),
-  errorImage = './img/error.png',
+  errorImage = '../img/error.png',
   options = {
     enableTime: true,
     time_24hr: true,
