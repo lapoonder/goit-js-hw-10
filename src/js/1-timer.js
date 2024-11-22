@@ -57,7 +57,7 @@ function checkingDate() {
     iziToast.error({
       class: 'error_message',
       title: 'Error',
-      iconUrl: `https://lapoonder.github.io/goit-js-hw-10/img/error.png`,
+      iconUrl: `${errorImage}`,
       message: 'Please choose a date in the future',
     });
     return false;
