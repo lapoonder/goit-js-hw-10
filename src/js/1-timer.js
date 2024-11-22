@@ -57,7 +57,7 @@ function checkingDate() {
     iziToast.error({
       class: 'error_message',
       title: 'Error',
-      iconUrl: `${errorImage}`,
+      iconUrl: `./img/error.png`,
       message: 'Please choose a date in the future',
     });
     return false;
