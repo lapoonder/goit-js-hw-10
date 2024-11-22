@@ -24,6 +24,7 @@ iziToast.settings({
 let userSelectedDate, intervalId, timerElement;
 const statusbtn = document.querySelector('button[data-start]'),
   inputField = document.querySelector('#datetime-picker'),
+  errorImage = './img/error.png',
   options = {
     enableTime: true,
     time_24hr: true,
@@ -56,7 +57,7 @@ function checkingDate() {
     iziToast.error({
       class: 'error_message',
       title: 'Error',
-      iconUrl: './img/error.png',
+      iconUrl: `${errorImage}`,
       message: 'Please choose a date in the future',
     });
     return false;
