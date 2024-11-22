@@ -3,6 +3,7 @@ import flatpickr from 'flatpickr';
 import 'flatpickr/dist/flatpickr.min.css';
 import iziToast from 'izitoast';
 import 'izitoast/dist/css/iziToast.min.css';
+import errorImage from '../img/error.png';
 
 iziToast.settings({
   timeout: 5000,
@@ -24,7 +25,6 @@ iziToast.settings({
 let userSelectedDate, intervalId, timerElement;
 const statusbtn = document.querySelector('button[data-start]'),
   inputField = document.querySelector('#datetime-picker'),
-  errorImage = './img/error.png',
   options = {
     enableTime: true,
     time_24hr: true,

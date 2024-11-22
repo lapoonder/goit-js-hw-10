@@ -3,6 +3,8 @@
 import iziToast from 'izitoast';
 // Додатковий імпорт стилів
 import 'izitoast/dist/css/iziToast.min.css';
+import errorImage from '../img/error.png';
+import okImage from '../img/ok.png';
 
 iziToast.settings({
   timeout: 5000,
@@ -24,8 +26,6 @@ iziToast.settings({
 let delay, state;
 const form = document.querySelector('.form'),
   btn = document.querySelector('button'),
-  errorImage = './img/error.png',
-  okImage = './img/ok.png',
   options = {
     enableTime: true,
     time_24hr: true,
